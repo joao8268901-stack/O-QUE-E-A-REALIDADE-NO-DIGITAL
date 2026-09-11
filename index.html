@@ -1,13 +1,223 @@
-<!-- REMOVIDO:
-<h2>Introdução</h2>
-<textarea placeholder="Digite aqui a introdução da atividade..."></textarea>
--->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O que é a realidade no digital?</title>
 
-<h2>Desenvolvimento</h2>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<div class="questao">
-    <h3>TEXTO</h3>
-    <textarea placeholder="Digite aqui o texto principal da atividade..."></textarea>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:#333;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,0.3);
+}
+
+header{
+    background:linear-gradient(135deg,#4338ca,#6366f1);
+    color:white;
+    text-align:center;
+    padding:50px 30px;
+}
+
+header h1{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+header p{
+    opacity:0.9;
+}
+
+.info{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    padding:30px;
+    background:#eef2ff;
+}
+
+.card{
+    flex:1;
+    min-width:200px;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.content{
+    padding:40px;
+}
+
+h2{
+    color:#4338ca;
+    margin-bottom:20px;
+}
+
+.texto{
+    background:#f8fafc;
+    border-left:6px solid #4338ca;
+    padding:25px;
+    border-radius:10px;
+    line-height:2;
+    text-align:justify;
+    margin-bottom:30px;
+}
+
+.atividade{
+    background:#fafafa;
+    border-radius:15px;
+    padding:25px;
+    border:1px solid #e5e7eb;
+}
+
+.atividade h3{
+    color:#4338ca;
+    margin-bottom:15px;
+}
+
+ol{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#f1f5f9;
+    color:#64748b;
+}
+
+.botao{
+    display:block;
+    margin:30px auto;
+    background:#4338ca;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.botao:hover{
+    background:#312e81;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2rem;
+    }
+
+    .content{
+        padding:20px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+    <h1>O QUE É A REALIDADE NO DIGITAL?</h1>
+    <p>Atividade Escolar</p>
+</header>
+
+<div class="info">
+    <div class="card">
+        <strong>Aluno:</strong> João Vitor
+    </div>
+
+    <div class="card">
+        <strong>Turma:</strong> 2º Ano Técnico
+    </div>
+
+    <div class="card">
+        <strong>Disciplina:</strong> Sistemas Operacionais
+    </div>
 </div>
 
+<div class="content">
+
+<h2>Texto</h2>
+
+<div class="texto">
+    <p>
+        Em 2024, uma pesquisa desenvolvida pela Organização para Cooperação e
+        Desenvolvimento Econômico avaliou a capacidade das pessoas adultas em
+        identificar conteúdos falsos publicados na internet.
+    </p>
+
+    <p>
+        Mais de 40 mil indivíduos, em 21 países, interagiram com conteúdos
+        verdadeiros e falsos em um canal digital semelhante a uma rede social.
+    </p>
+
+    <p>
+        O Brasil obteve o pior desempenho, com média de 54% de acertos.
+        É comum ficar em dúvida sobre a veracidade dos conteúdos encontrados
+        na internet.
+    </p>
+</div>
+
+<div class="atividade">
+
+<h3>Atividade</h3>
+
+<ol>
+    <li>
+        Por que é difícil identificar conteúdos gerados por inteligência
+        artificial nos dias atuais?
+    </li>
+
+    <li>
+        Como é possível ensinar consumidores de informação a reconhecer
+        conteúdos produzidos por IA?
+    </li>
+
+    <li>
+        Dê um exemplo de uma situação em que o uso de inteligência artificial
+        pode gerar uma informação incorreta ou enganosa.
+    </li>
+</ol>
+
+</div>
+
+<button class="botao" onclick="window.print()">
+🖨️ Imprimir / Salvar PDF
 </button>
+
+</div>
+
+<footer>
+    © 2026 - Trabalho Escolar de João Vitor
+</footer>
+
+</div>
+
+</body>
+</html>
