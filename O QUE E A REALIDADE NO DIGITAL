@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trabalho Escolar - João Vitor</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    min-height:100vh;
+    padding:40px;
+    color:white;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    background:#ffffff;
+    color:#222;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.3);
+}
+
+header{
+    text-align:center;
+    border-bottom:3px solid #6d28d9;
+    padding-bottom:20px;
+    margin-bottom:30px;
+}
+
+header h1{
+    color:#6d28d9;
+    font-size:2.2rem;
+}
+
+header p{
+    margin-top:10px;
+    color:#666;
+}
+
+.info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.card{
+    background:#f5f5f5;
+    padding:15px;
+    border-radius:12px;
+}
+
+.card strong{
+    color:#6d28d9;
+}
+
+.conteudo{
+    line-height:1.9;
+    font-size:18px;
+}
+
+.questao{
+    background:#fafafa;
+    border-left:5px solid #6d28d9;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+}
+
+.questao h3{
+    color:#6d28d9;
+    margin-bottom:10px;
+}
+
+footer{
+    text-align:center;
+    margin-top:40px;
+    color:#777;
+    border-top:1px solid #ddd;
+    padding-top:20px;
+}
+
+.btn-imprimir{
+    display:block;
+    margin:30px auto;
+    background:#6d28d9;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.btn-imprimir:hover{
+    transform:scale(1.05);
+    background:#5b21b6;
+}
+
+@media(max-width:768px){
+    .container{
+        padding:20px;
+    }
+
+    header h1{
+        font-size:1.8rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+    <h1>TRABALHO ESCOLAR</h1>
+    <p>Digite abaixo o conteúdo das suas folhas</p>
+</header>
+
+<div class="info">
+    <div class="card">
+        <strong>Aluno:</strong> João Vitor
+    </div>
+
+    <div class="card">
+        <strong>Turma:</strong> 2º Ano Técnico
+    </div>
+
+    <div class="card">
+        <strong>Disciplina:</strong> Informática
+    </div>
+</div>
+
+<section class="conteudo">
+
+    <div class="questao">
+        <h3>Questão 1</h3>
+        <p>
+            Digite aqui a pergunta e a resposta da primeira questão.
+        </p>
+    </div>
+
+    <div class="questao">
+        <h3>Questão 2</h3>
+        <p>
+            Digite aqui a pergunta e a resposta da segunda questão.
+        </p>
+    </div>
+
+    <div class="questao">
+        <h3>Questão 3</h3>
+        <p>
+            Digite aqui a pergunta e a resposta da terceira questão.
+        </p>
+    </div>
+
+    <div class="questao">
+        <h3>Atividade</h3>
+        <p>
+            Digite aqui o restante do conteúdo das folhas.
+        </p>
+    </div>
+
+</section>
+
+<button class="btn-imprimir" onclick="window.print()">
+🖨️ Imprimir / Salvar PDF
+</button>
+
+<footer>
+    © 2026 - Trabalho Escolar de João Vitor
+</footer>
+
+</div>
+
+</body>
+</html>
